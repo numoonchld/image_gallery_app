@@ -1,0 +1,42 @@
+{% include 'base.html' %}
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Image Gallery</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Categories
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">All</a>
+                    <a class="dropdown-item" href="#">Concept Art</a>
+                    <a class="dropdown-item" href="#">Product Design</a>
+                </div>
+            </li>
+
+
+        </ul>
+    </div>
+</nav>
+
+<div class="p-3">
+    <a href="{% url 'upload' %}"><button type="button" class="btn btn-primary btn-block ">Upload Image</button></a>
+</div>
+
+
+{% block content %}
+
+{% endblock content %}
+
+
+
+
