@@ -6,7 +6,7 @@ from .models import ImageUnit
 
 # upload modal imports
 # from django.views.generic.edit import FormView
-from .forms import ImageFieldForm
+# from .forms import ImageFieldForm
 
 # Create your views here.
 class ImageGalleryView(ListView):
