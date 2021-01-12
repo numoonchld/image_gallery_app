@@ -58,4 +58,4 @@ The images should be sorted according to the latest created.
 ### author
 
 - Raghavendra Saralaya 
-    - [email](raghavendra.saralaya@protonmail.com)
+    - [email](mailto:raghavendra.saralaya@protonmail.com)
