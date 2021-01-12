@@ -1,5 +1,6 @@
 from django.db import models
-# from django.utils import timezone
+import os
+from django.conf import settings
 
 # Create your models here.
 class ImageUnit(models.Model):
@@ -20,3 +21,7 @@ class ImageUnit(models.Model):
     )
     image_field = models.ImageField('File Selection',upload_to='gallery_images',max_length=500)
     image_uploaded_at = models.DateTimeField(auto_now_add=True, editable=False)
+
+    def delete(self, *args, **kwargs):
+        os.remove(os.path.join(settings.MEDIA_ROOT, self.image_field.name))
+        super(ImageUnit,self).delete(*args,**kwargs)

@@ -16,6 +16,11 @@
         </div>
 
         <div>
+            <a href="{% url 'image_delete' object.id %}">
+                <button type="button" class="btn btn-danger">
+                    Delete
+                </button>
+            </a>
             <a href="{{ request.META.HTTP_REFERER }}">
                 <button type="button" class="btn btn-primary">
                     Back

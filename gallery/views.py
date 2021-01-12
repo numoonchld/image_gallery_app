@@ -1,5 +1,5 @@
 # gallery view imports
-from django.views.generic import ListView, CreateView, DetailView
+from django.views.generic import ListView, CreateView, DetailView, DeleteView
 from .models import ImageUnit
 
 # upload modal imports
@@ -27,3 +27,7 @@ class ImageFilterView(ListView):
 
     def get_queryset(self): # overrides get
         return ImageUnit.objects.filter(image_category=self.kwargs.get('image_category')).order_by('-image_uploaded_at')
+
+class ImageDeleteView(DeleteView):
+    model = ImageUnit
+    success_url ="/"

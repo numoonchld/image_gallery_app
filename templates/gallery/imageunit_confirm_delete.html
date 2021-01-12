@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+
+    <form method="post">
+        {% csrf_token %}
+
+        <fieldset class="form-group">
+            <legend class=""> 
+                Delete Image
+            </legend>
+           <p> Are you sure you want to delete the image "{{ object.image_title }}"? <p>
+        </fieldset>
+
+        <div class=form-group>
+            <button class="btn btn-danger" type="submit" >
+                Yes, Delete!
+            </button>
+            <a class="btn btn-secondary" href="{% url 'image_detail' object.id %}"> Cancel </a>
+        </div>
+
+    </form>
+
+</div>
+
+{% endblock content %}
