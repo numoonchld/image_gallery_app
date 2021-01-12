@@ -10,6 +10,7 @@ from .forms import ImageFieldForm
 class ImageGalleryView(ListView):
     model = ImageUnit
     context_object_name = 'imageunits'
+    ordering = ["-image_uploaded_at"]
 
 class ImageUploadView(CreateView):
     model = ImageUnit

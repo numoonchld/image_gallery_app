@@ -3,7 +3,7 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="{% url 'home' %}">Image Gallery</a>
+    <a href="{% url 'upload' %}"><button type="button" class="btn btn-primary btn-block ">Upload Image</button></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -14,16 +14,14 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
-                    Categories
+                    Filter by Category
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="{% url 'home' %}">All</a>
+                    <a class="dropdown-item" href="{% url 'home' %}">(Clear Filter)</a>
                     <a class="dropdown-item" href="{% url 'filtered_gallery' 'CA' %}">Concept Art</a>
                     <a class="dropdown-item" href="{% url 'filtered_gallery' 'PD' %}">Product Design</a>
                 </div>
             </li>
-
-            <li><a href="{% url 'upload' %}"><button type="button" class="btn btn-primary btn-block ">Upload Image</button></a></li>
 
         </ul>
     </div>

@@ -7,8 +7,8 @@ class ImageFieldForm(forms.ModelForm):
     class Meta:
         model = ImageUnit
         fields = [
+            'image_field',
             'image_title',
             'image_category',
-            'image_field',
         ]
 

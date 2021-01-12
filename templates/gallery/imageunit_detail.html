@@ -11,6 +11,7 @@
                 <img src="{{ object.image_field.url }}" class="img-fluid" alt="" style="max-height: 60vh;">
                 <figcaption class="figure-caption">
                     <h3 class="text-center my-3">{{ object.image_title }}</h3>
+                    <p class="text-center" > category: {% if imageunit.image_category == 'PD' %} Product Design {% elif imageunit.image_category == 'CA' %} Concept Art {% endif %}</p>
                 </figcaption>
             </figure>
         </div>
