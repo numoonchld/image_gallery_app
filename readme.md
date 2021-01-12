@@ -2,15 +2,25 @@
 
 - django image gallery app
 
-### to run app 
+### directions to run app 
 
 - clone repo to local 
 - `cd` into project root 
     `cd image_gallery_app`
-- activate virtual env 
+- activate virtual env in CLI 
     - `source env/bin/activate` in project root dir
+- install dependencies for app
+    - `pip install -r requirements.txt`
 - run django development server 
-    - 'python manage.py runserver`
+    - `python manage.py runserver`
+- go to `localhost:8000` in browser
+    - use upload button to upload images into gallery
+    - click on image to show blown-up image 
+    - delete button exists in blow-up view 
+    - hit back to come back to gallery
+    - in nav bar, there is 'Filter by Category'
+- hit `Ctrl+C` to end development server
+- `deactivate` command ends virtual environment
 
 
 ### requirements
