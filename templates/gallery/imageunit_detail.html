@@ -1,0 +1,30 @@
+{% extends 'gallery.html' %}
+
+{% block content %}
+
+<div class="container-fluid py-3">
+
+    <div class="d-flex flex-column align-items-center justify-content-center my-5" >
+
+        <div>
+            <figure class="figure">
+                <img src="{{ object.image_field.url }}" class="img-fluid" alt="" style="max-height: 60vh;">
+                <figcaption class="figure-caption">
+                    <h3 class="text-center my-3">{{ object.image_title }}</h3>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div>
+            <a href="{{ request.META.HTTP_REFERER }}">
+                <button type="button" class="btn btn-primary">
+                    Back
+                </button>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock content %}

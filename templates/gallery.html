@@ -3,7 +3,7 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Image Gallery</a>
+    <a class="navbar-brand" href="{% url 'home' %}">Image Gallery</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -17,7 +17,7 @@
                     Categories
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="{% url 'home' %}"">All</a>
+                    <a class="dropdown-item" href="{% url 'home' %}">All</a>
                     <a class="dropdown-item" href="{% url 'filtered_gallery' 'CA' %}">Concept Art</a>
                     <a class="dropdown-item" href="{% url 'filtered_gallery' 'PD' %}">Product Design</a>
                 </div>
