@@ -17,20 +17,19 @@
                     Categories
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">All</a>
-                    <a class="dropdown-item" href="#">Concept Art</a>
-                    <a class="dropdown-item" href="#">Product Design</a>
+                    <a class="dropdown-item" href="{% url 'home' %}"">All</a>
+                    <a class="dropdown-item" href="{% url 'filtered_gallery' 'CA' %}">Concept Art</a>
+                    <a class="dropdown-item" href="{% url 'filtered_gallery' 'PD' %}">Product Design</a>
                 </div>
             </li>
 
+            <li><a href="{% url 'upload' %}"><button type="button" class="btn btn-primary btn-block ">Upload Image</button></a></li>
 
         </ul>
     </div>
 </nav>
 
-<div class="p-3">
-    <a href="{% url 'upload' %}"><button type="button" class="btn btn-primary btn-block ">Upload Image</button></a>
-</div>
+
 
 
 {% block content %}
