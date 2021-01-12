@@ -2,6 +2,17 @@
 
 - django image gallery app
 
+### to run app 
+
+- clone repo to local 
+- `cd` into project root 
+    `cd image_gallery_app`
+- activate virtual env 
+    - `source env/bin/activate` in project root dir
+- run django development server 
+    - 'python manage.py runserver`
+
+
 ### requirements
 
 The web app should contain a simple page which shows all the images uploaded.
@@ -34,3 +45,7 @@ The images should be sorted according to the latest created.
 
 5. Use Best coding practices modular programming.
 
+### author
+
+- Raghavendra Saralaya 
+    - [email](raghavendra.saralaya@protonmail.com)
